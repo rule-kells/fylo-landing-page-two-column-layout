@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+
+  <header class="header bg">
+    <nav class="nav d-flex-nav container">
+      <img src="./images/logo.svg" alt="Fylo" class="header-logo">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#" class="nav-link"></a>Features</li>
+        <li class="nav-item"><a href="#" class="nav-link"></a>Team</li>
+        <li class="nav-item"><a href="#" class="nav-link"></a>Sign In</li>
+      </ul>
+    </nav>
+    <section class="hero container d-flex">
+      <img src="./images/illustration-1.svg" alt="two people placing documents in a folder" class="illustration-1">
+      <div class="hero-content">
+        <h1 class="hero-title">All your files in one secure location, accessible anywhere.</h1>
+        <p class="hero-body">
+          Fylo stores your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.
+        </p>
+        <form>
+          <label for="emailAddress"></label>
+          <input id="emailAddress" class="input-hero" type="email" placeholder="Enter your email..."
+            title="Please check your email" required>
+          <button class="btn btn-hero" type="submit" value="submit">Get Started</button>
+        </form>
+      </div>
+    </section>
+  </header>
+
+
+  <main class="main">
+
+    <div class="productive-div container d-flex">
+      <img src="./images/illustration-2.svg" alt="three people holding up speech bubbles" class="illustration-2">
+      <section class="productive-content">
+        <h3 class="productive-title">Stay productive, wherever you are</h3>
+        <p class="productive-content-body productive-content-body-1">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+        </p>
+        <p class="productive-content-body productive-content-body-2">
+          Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!
+        </p>
+        <a href="#" class="fylo-works-link">See how Fylo works <img class="arrow-icon" src="./images/icon-arrow.svg"
+            alt=""></a < <!-- note here we will use psuedo class for the arrow image -- ::after 👍 -->
+
+        <blockquote class="testimonial-block">
+          <img src="./images/icon-quotes.svg" alt="quotes">
+          <p class="blockquote-body">
+            Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <section class="testimonial-profile">
+            <img src="./images/avatar-testimonial.jpg" alt="a man smiling" class="avatar-testimonial">
+            <section class="testimonial-content">
+              <h4>Kyle Burton</h4>
+              <p>Founder & CEO, Huddle</p>
+            </section>
+          </section>
+      </section>
+      </blockquote>
+    </div>
+    <div class="access-div">
+      <section class="access-div-flex container d-flex">
+        <div class="access-content">
+          <h2>Get early access today</h2>
+          <p>
+            It only takes a minute to sign up and our free starter tier is extremely generous.
+            If you have any questions, our support team would be happy to help you.
+          </p>
+        </div>
+        <div class="access-btn-div">
+          <form>
+            <label for="emailAddressAccess"></label>
+            <input id="emailAddressAccess" class="access-input" type="email" placeholder="email@example.com" required>
+            <button class="btn btn-access" type="submit" value="submit">Get Started For Free</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+
+    <div class="company container">
+      <img src="./images/logo.svg" alt="Fylo" class="footer-logo">
+      <div class="d-flex">
+        <div class="company-get-in-touch">
+          <div class="phone-div">
+            <img src="./images/icon-phone.svg" alt="">
+            <p>Phone: +1-543-123-4567</p>
+          </div>
+          <div class="email-div">
+            <img src="./images/icon-email.svg" alt="">
+            <p>example@fylo.com</p>
+          </div>
+        </div>
+
+        <ul class="company-culture">
+          <li class="company-item">
+            <a href="#" class="company-link">About Us</a>
+          </li>
+          <li class="company-item">
+            <a href="#" class="company-link">Jobs</a>
+          </li>
+          <li class="company-item">
+            <a href="#" class="company-link">Press</a>
+          </li>
+          <li class="company-item">
+            <a href="#" class="company-link">Blog</a>
+          </li>
+        </ul>
+
+        <ul class="company-contact">
+          <li class="contant-item">
+            <a href="#" class="contact-link">Contact Us</a>
+          </li>
+          <li class="contant-item">
+            <a href="#" class="contact-link">Terms</a>
+          </li>
+          <li class="contant-item">
+            <a href="#" class="contact-link">Privacy</a>
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link" aria-label="facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" aria-label="twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" aria-label="instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Kellen Ruyle</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
